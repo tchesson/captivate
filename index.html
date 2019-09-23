@@ -1,65 +1,79 @@
+<!DOCTYPE html>
 <html>
-<body>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<head>
+	<link rel="stylesheet" href="css/slideshow_gallary.css">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+	<script type="application/javascript" src="js/slideshow_gallary.js"></script>
+</head>
 
-<h2 style="text-align:center">Slideshow Gallery</h2>
+<body style="background-color: black;">
+  <div class= "container">
+    <div class ="row">
+      <div class="col-12">
+        <div id="demo"class="carousel slide" data-ride="carousel">
 
-<div class="container">
-  <div class="mySlides">
-    <div class="numbertext">1 / 6</div>
-    <img src="img_woods_wide.jpg" style="width:100%">
-  </div>
+        <!-- Indicators -->
+        <ul class="carousel-indicators">
+          <li data-target="#demo" data-slide-to="0" class="active"></li>
+          <li data-target="#demo" data-slide-to="1"></li>
+          <li data-target="#demo" data-slide-to="2"></li>
+          <li data-target="#demo" data-slide-to="3"></li>
+        </ul>
 
-  <div class="mySlides">
-    <div class="numbertext">2 / 6</div>
-    <img src="img_5terre_wide.jpg" style="width:100%">
-  </div>
+              <!-- The slideshow -->
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <div class="numbertext">1 / 4</div>
+            <img src="images/bar.jpg" alt="Bar" width="1000" height="665.55">
+            <div class="carousel-caption">
+              <h3>The Bar</h3>
+              <p>Serves Top Shelf Only</p>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <div class="numbertext">2 / 4</div>
+            <img src="images/court.jpg" alt="Basketball" width="1000" height="665.55">
+            <div class="carousel-caption">
+              <h3>The Basement</h3>
+              <p>Freestyle Fridays</p>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <div class="numbertext">3 / 4</div>
+            <img src="images/mancave.jpg" alt="Mancave" width="1000" height="665.55">
+            <div class="carousel-caption">
+              <h3>Mancave</h3>
+              <p>Men Only</p>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <div class="numbertext">4 / 4</div>
+            <img src="images/pool.jpg" alt="Pool" width="1000" height="665.55">
+            <div class="carousel-caption">
+              <h3>Pool Place</h3>
+              <p>We had such a great time playing Pool!</p>
+            </div>
+          </div>
+        </div>
 
-  <div class="mySlides">
-    <div class="numbertext">3 / 6</div>
-    <img src="img_mountains_wide.jpg" style="width:100%">
-  </div>
-    
-  <div class="mySlides">
-    <div class="numbertext">4 / 6</div>
-    <img src="img_lights_wide.jpg" style="width:100%">
-  </div>
+               <!-- Left and right controls -->
+        <a class="carousel-control-prev" href="#demo" data-slide="prev">
+          <span class="carousel-control-prev-icon"></span>
+        </a>
+        <a class="carousel-control-next" href="#demo" data-slide="next">
+          <span class="carousel-control-next-icon"></span>
+        </a>
 
-  <div class="mySlides">
-    <div class="numbertext">5 / 6</div>
-    <img src="img_nature_wide.jpg" style="width:100%">
-  </div>
-    
-  <div class="mySlides">
-    <div class="numbertext">6 / 6</div>
-    <img src="img_snow_wide.jpg" style="width:100%">
-  </div>
-    
-  <a class="prev" onclick="plusSlides(-1)">❮</a>
-  <a class="next" onclick="plusSlides(1)">❯</a>
-
-  <div class="caption-container">
-    <p id="caption"></p>
-  </div>
-
-  <div class="row">
-    <div class="column">
-      <img class="demo cursor" src="img_woods.jpg" style="width:100%" onclick="currentSlide(1)" alt="The Woods">
+        </div>
+      </div>
     </div>
-    <div class="column">
-      <img class="demo cursor" src="img_5terre.jpg" style="width:100%" onclick="currentSlide(2)" alt="Cinque Terre">
-    </div>
-    <div class="column">
-      <img class="demo cursor" src="img_mountains.jpg" style="width:100%" onclick="currentSlide(3)" alt="Mountains and fjords">
-    </div>
-    <div class="column">
-      <img class="demo cursor" src="img_lights.jpg" style="width:100%" onclick="currentSlide(4)" alt="Northern Lights">
-    </div>
-    <div class="column">
-      <img class="demo cursor" src="img_nature.jpg" style="width:100%" onclick="currentSlide(5)" alt="Nature and sunrise">
-    </div>    
-    <div class="column">
-      <img class="demo cursor" src="img_snow.jpg" style="width:100%" onclick="currentSlide(6)" alt="Snowy Mountains">
-    </div>
   </div>
-</div>
+<br>
+
+</body>
 </html>
